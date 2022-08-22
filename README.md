@@ -1,4 +1,4 @@
-# Asynchronous code and APIs
+# City Explorer
 
 **Author**: Daniel Awesome
 **Version**: 1.0.0
