@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Daniel Awesome
-**Version**: 1.0.1
+**Version**: 1.0.2
 
 ## Overview
 
@@ -26,6 +26,8 @@ This project was made using:
 ## Change Log
 
 Ver. 1.0.1 08-22-2022 4:33pm - Application now has a text entry field allowing a user to search for a city and recive basic information and a visual map of the location
+
+Ver. 1.0.2 08-22-2022 6:19pm - Styled the application and added minor error handling for empty strings in the input field
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
