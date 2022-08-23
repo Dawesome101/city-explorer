@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.app form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3em;
+}
+
+.app label{
+  color: white;
+  font-size: larger;
+  margin-right: 1em;
+}
+
+.app input{
+  background-color: #ef8971;
+  border: solid #0d182c 1px;
+  border-radius: 0.4em;
+  margin-left: 0.5em;
+}
+
+.app button{
+  background-color: #ab5f61;
+  border: ridge 2px #0d182c;
+  color: #ef8971;
+  border-radius: 1em;
+  width: 10em;
+  height: 2em;
+}
+
+.app button:hover{
+  background-color: #ab5f61;
+  border: ridge 3px #0d182c;
+  color: white;
+  border-radius: 1em;
+  width: 10.2em;
+  height: 2.3em;
+}
