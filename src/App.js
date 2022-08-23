@@ -2,7 +2,6 @@ import React from "react";
 import axios from 'axios';
 import ShowMap from './component/ShowMap.js'
 import './css/App.css'
-import Button from 'react-bootstrap/Button';
 
 class App extends React.Component {
 
