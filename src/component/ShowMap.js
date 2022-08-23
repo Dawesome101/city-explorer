@@ -13,15 +13,12 @@ class ShowMap extends React.Component{
           </div>
           <Card.Body className='card-body'>
             <Card.Title className='card-title'>{this.props.displayName}</Card.Title>
-            <h2>Lat:{this.props.cityLat} Lon:{this.props.cityLong}</h2>
             <Card.Text className='card-test'>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            Lat:{this.props.cityLat} Lon:{this.props.cityLong}
             </Card.Text>
           </Card.Body>
         </Card>
       </div>
-      
     );
   }
 }
