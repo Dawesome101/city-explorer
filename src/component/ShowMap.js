@@ -7,7 +7,7 @@ class ShowMap extends React.Component{
   render() {
     return(
       <div>
-        <Card>
+        <Card border='info'>
           <div className='card-img-cnt'>
             <Card.Img className='card-img' cvariant="top" src={this.props.cityMap} />
           </div>
