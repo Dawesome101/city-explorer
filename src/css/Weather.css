@@ -1,0 +1,18 @@
+.collapse-cnt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.collapse{
+  color: white;
+  background: linear-gradient(180deg, rgb(63, 46, 55) 0%, rgba(13,24,44,1) 100%);
+  width: fit-content;
+  border-left: solid 1px #00ffff;
+  border-right: solid 1px #00ffff;
+  border-bottom: solid 1px #00ffff;
+  border-radius: 0.2em;
+  text-align: center;
+  padding: 1em 0.4em 0 0.4em;
+}

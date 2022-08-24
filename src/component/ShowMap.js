@@ -14,7 +14,7 @@ class ShowMap extends React.Component{
           <Card.Body className='card-body'>
             <Card.Title className='card-title'>{this.props.displayName}</Card.Title>
             <Card.Text className='card-test'>
-            Lat:{this.props.cityLat} Lon:{this.props.cityLong}
+            Lat: {this.props.cityLat} Lon: {this.props.cityLong}
             </Card.Text>
           </Card.Body>
         </Card>
