@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Daniel Awesome
-**Version**: 1.0.3
+**Version**: 1.0.5
 
 ## Overview
 
@@ -32,6 +32,8 @@ Ver. 1.0.2 08-22-2022 6:19pm - Styled the application and added minor error hand
 Ver. 1.0.3 08-22-2022 7:52pm - Reworked styling to include React Bootstrap elements and added error logging with on screen representation
 
 Ver. 1.0.4 08-23-2022 5:56pm - Changed the search results to query for weather data in addition to the citymap.
+
+Ver. 1.0.5 08-23-2022 11:24pm - Handled data transfer and display on the front end as well as passing errors from server to client"
 
 ## Credit and Collaborations
 

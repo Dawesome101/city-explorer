@@ -2,6 +2,7 @@ import React from "react";
 import axios from 'axios';
 import ShowMap from './component/ShowMap.js'
 import Error from './component/Error.js'
+import Weather from './component/Weather.js'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './css/App.css'
@@ -14,11 +15,14 @@ class App extends React.Component {
     this.state = {
       city: '',
       cityData: [],
+      forcast: [],
 
       displayName: 'Seattle',
-      cityLat: 0,
-      cityLong: 0,
+      cityLat: 47.6038321,
+      cityLong: -122.3300624,
       displayMap: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=47.6038321,-122.3300624&size=600x600&zoom=14`,
+
+      showWeather: false,
 
       error: false,
       errorMessage: ''
@@ -46,13 +50,29 @@ class App extends React.Component {
   
       let weatherURL = `${process.env.REACT_APP_SERVER}/weather?city=${this.state.city}`
       let weatherData = await axios.get(weatherURL);
+        
+      
+      if(typeof(weatherData.data) === 'string'){
+        this.setState({
+          error: true,
+          errorMessage: `${weatherData.data}`
+        })
+        this.handleShowWeather(false);
+      } else {
+        this.handleShowWeather(true)
+      }
 
       this.setState({
         displayName: cityData.data[0].display_name,
         cityLat: cityData.data[0].lat,
         cityLong: cityData.data[0].lon,
-        displayMap: cityMap
+        displayMap: cityMap,
+        forcast: weatherData
       })
+
+      
+
+
     } catch(error){
       this.setState({
         error: true,
@@ -75,11 +95,16 @@ class App extends React.Component {
   //   console.log(tempResp);
   // }
 
+  handleShowWeather = (openWeather) => {
+    // console.log(`Toggle ${this.state.showToast}`)
+    this.setState({showWeather: openWeather});
+  };
+
   render(){
     return (
       <div className="app">
         <Error error={this.state.error} errorMessage={this.state.errorMessage} handleClose={this.handleClose}/>
-        <Button variant="info" onClick={this.handleClick}>Test</Button>
+        {/* <Button variant="info" onClick={this.handleClick}>Test</Button> */}
         <div className="form-cnt">
           <Form className='app-form' onSubmit={this.getCityData}>
             <Form.Group className="mb-3" controlId="basicInput">
@@ -92,6 +117,11 @@ class App extends React.Component {
           </Form>
         </div>
         <ShowMap displayName={this.state.displayName} cityLat={this.state.cityLat} cityLong={this.state.cityLong} cityMap={this.state.displayMap}/>
+        <div>
+          {
+            this.state.showWeather ? <Weather forcast={this.state.forcast} showWeather={this.state.showWeather} handleShowWeather={this.handleShowWeather}/> : null
+          };
+        </div>
       </div>
     );
   }
