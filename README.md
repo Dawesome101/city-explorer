@@ -33,7 +33,7 @@ Ver. 1.0.3 08-22-2022 7:52pm - Reworked styling to include React Bootstrap eleme
 
 Ver. 1.0.4 08-23-2022 5:56pm - Changed the search results to query for weather data in addition to the citymap.
 
-Ver. 1.0.5 08-23-2022 11:24pm - Handled data transfer and display on the front end as well as passing errors from server to client"
+Ver. 1.0.5 08-23-2022 11:24pm - Handled data transfer and display on the front end as well as passing errors from server to client
 
 ## Credit and Collaborations
 
