@@ -21,6 +21,7 @@ This project was made using:
 - React BootStrap
 - Axios
 - LocationIQ
+- Netlify.com (for deploying the site)
 
 ## Change Log
 
@@ -29,6 +30,8 @@ Ver. 1.0.1 08-22-2022 4:33pm - Application now has a text entry field allowing a
 Ver. 1.0.2 08-22-2022 6:19pm - Styled the application and added minor error handling for empty strings in the input field
 
 Ver. 1.0.3 08-22-2022 7:52pm - Reworked styling to include React Bootstrap elements and added error logging with on screen representation
+
+Ver. 1.0.4 08-23-2022 5:56pm - Changed the search results to query for weather data in addition to the citymap.
 
 ## Credit and Collaborations
 
@@ -51,4 +54,10 @@ Actual time needed to complete: 5.45 hours
 
 ## Data Flow Chart
 
+### Class 06 Data Flow Chart
+
 ![Data Flow](./src/img/DataFlow.jpg)
+
+### Class 07 Data Flow Chart
+
+![Data Flow](./src/img/DataFlow2.jpg)

@@ -40,12 +40,13 @@ class App extends React.Component {
         this.setState({city: 'Seattle'});
       }
   
-      let myURL = `https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`
-  
-      let cityData = await axios.get(myURL);
-  
+      let cityURL = `https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`
+      let cityData = await axios.get(cityURL);
       let cityMap = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${cityData.data[0].lat},${cityData.data[0].lon}&size=600x600&zoom=14&markers=size:small|color:red|${cityData.data[0].lat},${cityData.data[0].lon}`
   
+      let weatherURL = `${process.env.REACT_APP_SERVER}/weather?city=${this.state.city}`
+      let weatherData = await axios.get(weatherURL);
+
       this.setState({
         displayName: cityData.data[0].display_name,
         cityLat: cityData.data[0].lat,
@@ -64,10 +65,21 @@ class App extends React.Component {
     this.setState({error: false});
   };
 
+  // handleClick = async (e) => {
+  //   e.preventDefault();
+  //   console.log('Click');
+
+  //   let url = `${process.env.REACT_APP_SERVER}/weather?city=Seattle&lat=`
+  //   let tempResp = await axios.get(url);
+
+  //   console.log(tempResp);
+  // }
+
   render(){
     return (
       <div className="app">
         <Error error={this.state.error} errorMessage={this.state.errorMessage} handleClose={this.handleClose}/>
+        <Button variant="info" onClick={this.handleClick}>Test</Button>
         <div className="form-cnt">
           <Form className='app-form' onSubmit={this.getCityData}>
             <Form.Group className="mb-3" controlId="basicInput">
