@@ -70,9 +70,6 @@ class App extends React.Component {
         forcast: weatherData
       })
 
-      
-
-
     } catch(error){
       this.setState({
         error: true,
@@ -85,18 +82,7 @@ class App extends React.Component {
     this.setState({error: false});
   };
 
-  // handleClick = async (e) => {
-  //   e.preventDefault();
-  //   console.log('Click');
-
-  //   let url = `${process.env.REACT_APP_SERVER}/weather?city=Seattle&lat=`
-  //   let tempResp = await axios.get(url);
-
-  //   console.log(tempResp);
-  // }
-
   handleShowWeather = (openWeather) => {
-    // console.log(`Toggle ${this.state.showToast}`)
     this.setState({showWeather: openWeather});
   };
 
@@ -104,7 +90,6 @@ class App extends React.Component {
     return (
       <div className="app">
         <Error error={this.state.error} errorMessage={this.state.errorMessage} handleClose={this.handleClose}/>
-        {/* <Button variant="info" onClick={this.handleClick}>Test</Button> */}
         <div className="form-cnt">
           <Form className='app-form' onSubmit={this.getCityData}>
             <Form.Group className="mb-3" controlId="basicInput">
