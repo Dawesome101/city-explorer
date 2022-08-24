@@ -35,6 +35,8 @@ Ver. 1.0.4 08-23-2022 5:56pm - Changed the search results to query for weather d
 
 Ver. 1.0.5 08-23-2022 11:24pm - Handled data transfer and display on the front end as well as passing errors from server to client
 
+Ver. 1.0.6 08-24-2022 2:43pm - Prep for server handling of API calls and setup of readme file to reflect todays feature implimentation tracking
+
 ## Credit and Collaborations
 
 The following are resources used to help create the layout and functionality of this app:
@@ -43,23 +45,48 @@ The following are resources used to help create the layout and functionality of 
 
 - [Location IQ Documents](https://locationiq.com/)
 
-## Feature Implimentation Tracking
-
-Name of feature: Asynchronous Code & APIs
-
-Estimate of time needed to complete: 4 hours
-
-Start time: 2:15
-Finish time: 7:47
-
-Actual time needed to complete: 5.45 hours
-
 ## Data Flow Chart
 
 ### Class 06 Data Flow Chart
 
-![Data Flow](./src/img/DataFlow.jpg)
+![Data Flow 1](./src/img/DataFlow.jpg)
 
 ### Class 07 Data Flow Chart
 
-![Data Flow](./src/img/DataFlow2.jpg)
+![Data Flow 2](./src/img/DataFlow2.jpg)
+
+### Class 08 Data Flow Chart
+
+![Data Flow 3](./src/img/DataFlow3.jpg)
+
+## Feature Implimentation Tracking
+
+`Name of feature: Asynchronous Code & APIs`
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 2:15  
+
+Finish time: 7:47
+
+Actual time needed to complete: 5.45 hours
+
+`Name of feature: Custom Servers with Node and Express`
+
+Estimate of time needed to complete: 10hours
+
+Start time: 3pm
+
+Finish time: 11:30pm
+
+Actual time needed to complete: 8
+
+`Name of feature: API's`
+
+Estimate of time needed to complete: 6 hours
+
+Start time: 2:30pm
+
+Finish time: _____
+
+Actual time needed to complete: _____
