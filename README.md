@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Daniel Awesome
-**Version**: 1.0.5
+**Version**: 1.0.8
 
 ## Overview
 
@@ -10,8 +10,9 @@ This is an app designed to allow a user to enter a locations name and see it on 
 ## Getting Started
 
 1. Clone the repository.
-2. Create a .env file in the root.
-3. Using the key in the .env.sample file, copy it and paste it into your .env file and replace the value with your own key.
+2. Create a .env file in the root directory.
+3. Add REACT_APP_LOCATIONIQ_API_KEY API key to the .env file. Use env.sample file as a template.
+4. Add REACT_APP_SERVER API key to the .env file. Use env.sample file as a template.
 
 ## Architecture
 
@@ -21,6 +22,8 @@ This project was made using:
 - React BootStrap
 - Axios
 - LocationIQ
+- WeatherBit
+- The Movie DB
 - Netlify.com (for deploying the site)
 
 ## Change Log
@@ -37,6 +40,10 @@ Ver. 1.0.5 08-23-2022 11:24pm - Handled data transfer and display on the front e
 
 Ver. 1.0.6 08-24-2022 2:43pm - Prep for server handling of API calls and setup of readme file to reflect todays feature implimentation tracking
 
+Ver. 1.0.7 08-24-2022 6:33pm - Retargeted calls for weather data.
+
+Ver. 1.0.8 08-24-2022 9:00pm - Updated all incomming data routes to point to the correct components.  Updated visual styles to best display the weather and movie data.
+
 ## Credit and Collaborations
 
 The following are resources used to help create the layout and functionality of this app:
@@ -44,6 +51,10 @@ The following are resources used to help create the layout and functionality of 
 - [React Bootstrap Documents](https://react-bootstrap.github.io/)
 
 - [Location IQ Documents](https://locationiq.com/)
+
+- [The Movie DB Documents](https://developers.themoviedb.org/)
+
+- [WeatherBit Documents](https://www.weatherbit.io/api/weather-forecast-16-day)
 
 ## Data Flow Chart
 
@@ -87,6 +98,6 @@ Estimate of time needed to complete: 6 hours
 
 Start time: 2:30pm
 
-Finish time: _____
+Finish time: 9:03pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 6.5 hours
