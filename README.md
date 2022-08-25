@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Daniel Awesome
-**Version**: 1.0.5
+**Version**: 1.0.7
 
 ## Overview
 
@@ -36,6 +36,8 @@ Ver. 1.0.4 08-23-2022 5:56pm - Changed the search results to query for weather d
 Ver. 1.0.5 08-23-2022 11:24pm - Handled data transfer and display on the front end as well as passing errors from server to client
 
 Ver. 1.0.6 08-24-2022 2:43pm - Prep for server handling of API calls and setup of readme file to reflect todays feature implimentation tracking
+
+Ver. 1.0.7 08-24-2022 6:33pm - Retargeted calls for weather data.
 
 ## Credit and Collaborations
 
