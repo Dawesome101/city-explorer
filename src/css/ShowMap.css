@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: linear-gradient(180deg, rgba(239,137,113,1) 0%, rgba(175,115,113,1) 35%, rgba(171,95,97,1) 63%, rgba(124,84,106,1) 85%, rgba(13,24,44,1) 100%);
+  /* background: linear-gradient(180deg, rgba(239,137,113,1) 0%, rgba(175,115,113,1) 35%, rgba(171,95,97,1) 63%, rgba(124,84,106,1) 85%, rgba(13,24,44,1) 100%); */
+    background: url('../../public/img/Resized_EveningSky.JPG') center fixed;
   color: white;
 }
 
