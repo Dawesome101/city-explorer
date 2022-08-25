@@ -70,6 +70,10 @@ The following are resources used to help create the layout and functionality of 
 
 ![Data Flow 3](./src/img/DataFlow3.jpg)
 
+### Class 09 Data Flow Chart
+
+![Data Flow 4](./src/img/DataFlow4.png)
+
 ## Feature Implimentation Tracking
 
 `Name of feature: Asynchronous Code & APIs`
@@ -101,3 +105,14 @@ Start time: 2:30pm
 Finish time: 9:03pm
 
 Actual time needed to complete: 6.5 hours
+
+`Name of feature: Refactoring into Modules`
+
+Estimate of time needed to complete: 4
+
+Start time: 4:11pm
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
