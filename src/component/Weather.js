@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherDay from './WeatherDay.js'
 import Collapse from 'react-bootstrap/Collapse';
 import '../css/Weather.css'
 
@@ -12,7 +13,7 @@ class Weather extends React.Component{
             <h2>{this.props.forcast.data[0].city} Three Day Forcast:</h2>
             {
               this.props.forcast.data.map((v, i) => {
-                return <p key={i}>Low of {v.low_temp} and a high of {v.high_temp} with {v.description} : {v.date}</p>
+                return <WeatherDay key={i} weatherString={` ${v.valid_date}: Low of ${v.low_temp} and a high of ${v.high_temp} with ${v.description}`}/>
               })
             }
           </div>
