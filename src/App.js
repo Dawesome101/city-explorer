@@ -8,6 +8,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './css/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import moviePoster from './img/StockMovie.jpg'
+
 
 class App extends React.Component {
 
@@ -19,6 +21,7 @@ class App extends React.Component {
       forcast: [],
       movies: [],
 
+      //On Refresh Defaults
       display_name: 'Seattle',
       cityLat: 47.6038321,
       cityLon: -122.3300624,
@@ -53,7 +56,7 @@ class App extends React.Component {
   
       let weatherURL = `${process.env.REACT_APP_SERVER}/weather?searchQueryLat=${cityData.data[0].lat}&searchQueryLon=${cityData.data[0].lon}`
       let weatherData = await axios.get(weatherURL);
-
+ 
       let movieURL = `${process.env.REACT_APP_SERVER}/movies?searchQuery=${this.state.city}`
       let movieData = await axios.get(movieURL);
 
@@ -68,7 +71,6 @@ class App extends React.Component {
         forcast: weatherData,
         movies: movieData.data
       })
-
     } catch(error){
       this.handleShowWeather(false);
       this.setState({
@@ -88,11 +90,7 @@ class App extends React.Component {
 
   handleShowMovies = (openMovies) => {
     this.setState({showMovies: openMovies});
-
-    console.log('showing movies');
   }
-
-
 
   render(){
     return (
@@ -119,7 +117,11 @@ class App extends React.Component {
           {
             this.state.showMovies && (
               this.state.movies.map((v, i) => {
-                return <Movies key={i} movie={v}/>
+                if(v.poster === 'https://image.tmdb.org/t/p/w500/null'){
+                  return <Movies key={i} poster={moviePoster} movie={v}/>
+                } else {
+                  return <Movies key={i} poster={v.poster} movie={v}/>
+                }
               })
             )
           }

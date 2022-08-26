@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Daniel Awesome
-**Version**: 1.0.8
+**Version**: 1.0.9
 
 ## Overview
 
@@ -44,6 +44,8 @@ Ver. 1.0.7 08-24-2022 6:33pm - Retargeted calls for weather data.
 
 Ver. 1.0.8 08-24-2022 9:00pm - Updated all incomming data routes to point to the correct components.  Updated visual styles to best display the weather and movie data.
 
+Ver. 1.0.9 08-25-2022 6:32 - Created weather and movie components for their parrent components and cleaned the rest of the code.  Removed all console logs and generally prepared for a final version submission.
+
 ## Credit and Collaborations
 
 The following are resources used to help create the layout and functionality of this app:
@@ -55,6 +57,8 @@ The following are resources used to help create the layout and functionality of 
 - [The Movie DB Documents](https://developers.themoviedb.org/)
 
 - [WeatherBit Documents](https://www.weatherbit.io/api/weather-forecast-16-day)
+
+- [www.pexels.com: Stock Movie Poster](https://www.pexels.com/search/movie%20poster/) 
 
 ## Data Flow Chart
 
@@ -112,7 +116,6 @@ Estimate of time needed to complete: 4
 
 Start time: 4:11pm
 
-Finish time: _____
+Finish time: 6:32pm
 
-Actual time needed to complete: _____
-
+Actual time needed to complete: 2.5 hours
