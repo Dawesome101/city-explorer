@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Daniel Awesome
-**Version**: 1.0.9
+**Version**: 1.0.10
 
 ## Overview
 
@@ -25,6 +25,7 @@ This project was made using:
 - WeatherBit
 - The Movie DB
 - Netlify.com (for deploying the site)
+- jquery
 
 ## Change Log
 
@@ -46,6 +47,8 @@ Ver. 1.0.8 08-24-2022 9:00pm - Updated all incomming data routes to point to the
 
 Ver. 1.0.9 08-25-2022 6:32 - Created weather and movie components for their parrent components and cleaned the rest of the code.  Removed all console logs and generally prepared for a final version submission.
 
+Ver. 1.0.10 08-27-2022 2:45 - Changed async to use Promises instead of a direct async/await method and added search caching.
+
 ## Credit and Collaborations
 
 The following are resources used to help create the layout and functionality of this app:
@@ -58,7 +61,7 @@ The following are resources used to help create the layout and functionality of 
 
 - [WeatherBit Documents](https://www.weatherbit.io/api/weather-forecast-16-day)
 
-- [www.pexels.com: Stock Movie Poster](https://www.pexels.com/search/movie%20poster/) 
+- [www.pexels.com: Stock Movie Poster](https://www.pexels.com/search/movie%20poster/)
 
 ## Data Flow Chart
 
@@ -77,6 +80,10 @@ The following are resources used to help create the layout and functionality of 
 ### Class 09 Data Flow Chart
 
 ![Data Flow 4](./src/img/DataFlow4.png)
+
+### Class 10 Data Flow Chart
+
+![Data Flow 5](./src/img/DataFlow5.png)
 
 ## Feature Implimentation Tracking
 
@@ -119,3 +126,13 @@ Start time: 4:11pm
 Finish time: 6:32pm
 
 Actual time needed to complete: 2.5 hours
+
+`Name of feature: Caching Search Results`
+
+Estimate of time needed to complete: 3
+
+Start time: 11:32
+
+Finish time: 2:50
+
+Actual time needed to complete: 3hrs 20mins

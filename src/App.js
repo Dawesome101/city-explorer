@@ -117,10 +117,11 @@ class App extends React.Component {
           {
             this.state.showMovies && (
               this.state.movies.map((v, i) => {
-                if(v.poster === 'https://image.tmdb.org/t/p/w500/null'){
+
+                if(v.poster === null){
                   return <Movies key={i} poster={moviePoster} movie={v}/>
                 } else {
-                  return <Movies key={i} poster={v.poster} movie={v}/>
+                  return <Movies key={i} poster={`https://image.tmdb.org/t/p/w500${v.poster}`} movie={v}/>
                 }
               })
             )
